@@ -39,6 +39,9 @@ export HISTFILE=$HOME/.bash_history
 export EDITOR=vim
 export PAGER=less
 
+# disabled GNU screen lock
+export LOCKPRG='/bin/true'
+
 # set term title with screen
 export PROMPT_COMMAND='echo -ne "\033P\033]0;$(hostname)\007\033\\"'
 
