@@ -1,5 +1,3 @@
-echo "### $USER bash_profile loaded "
-
 # prevent screen locks
 stty stop undef
 
@@ -12,15 +10,8 @@ function myssh {
         DEST=$1;
     fi
 
-    TITLE=`echo $1 | awk -F'.' '{ print \$1 }'`; # dev03.mail.miniy -> dev03
+    TITLE=`echo $1 | awk -F'.' '{ print \$1 }'`;
     screen -t $TITLE ssh -o 'StrictHostKeyChecking=no' -o 'ForwardAgent=yes' $DEST
-}
-
-function clip {
-    echo -ne "\e""[5i"
-    cat $*
-    echo -ne "\e""[4i"
-    echo 'Copied to Windows clipboard' 1>&2
 }
 
 function realpath {
