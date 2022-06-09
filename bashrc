@@ -41,3 +41,8 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias df='df -h'
 alias scppath='echo -n `hostname`:; realpath'
+
+# Fix SSH auth socket location so agent forwarding works within tmux/screen
+if [ "$SSH_AUTH_SOCK" -a ! -e "$HOME/.ssh/agent.sock" ]; then
+  ln -sf $SSH_AUTH_SOCK ~/.ssh/agent.sock
+fi
