@@ -1,0 +1,12 @@
+{
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "extensions.ignoreRecommendations": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Monaco",
+    "terminal.integrated.copyOnSelection": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.insertSpaces": false,
+    "workbench.colorTheme": "Default Light+"
+}

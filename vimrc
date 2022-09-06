@@ -18,11 +18,6 @@ nnoremap k gk
 nnoremap <Down> g<Down>
 nnoremap <Up> g<Up>
 
-
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBuffs = 1
-
 au BufRead,BufNewFile Makefile set noexpandtab
 
 syntax on
