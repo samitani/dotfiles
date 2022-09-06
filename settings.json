@@ -1,6 +1,6 @@
 {
     "vim.hlsearch": true,
-    "vim.ignorecase": true,
+    "vim.useSystemClipboard": true,
     "extensions.ignoreRecommendations": true,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontSize": 15,
